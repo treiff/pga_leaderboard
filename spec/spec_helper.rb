@@ -1,0 +1,1 @@
+require 'pga_leaderboard'
