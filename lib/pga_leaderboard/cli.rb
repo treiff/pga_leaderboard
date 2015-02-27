@@ -15,10 +15,11 @@ module PgaLeaderboard
       output(tournament)
     end
 
-    desc 'output', 'output current tournament leaderboard'
+    private
+
     def output(tournament)
       puts
-      puts tournament
+      puts tournament.string_response
       puts
     end
   end
