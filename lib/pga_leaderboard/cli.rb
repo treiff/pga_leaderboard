@@ -9,17 +9,16 @@ module PgaLeaderboard
       @tournament = PgaLeaderboard::Tournament.new
     end
 
-    desc 'now', 'see current tournament leaderboard'
-    def now
-      tournament = @tournament
+    desc 'leaderboard', 'see current tournament leaderboard'
+    def leaderboard
       output(tournament)
     end
 
     private
 
-    def output(tournament)
+    def output(array)
       puts
-      puts tournament.string_response
+      puts tournament.tournament_name
       puts
     end
   end
