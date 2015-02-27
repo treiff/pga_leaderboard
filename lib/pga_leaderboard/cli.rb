@@ -1,4 +1,6 @@
-module PgaLeaderboard
+require 'thor'
+
+module PgaLeaderboar
   class CLI < Thor
     attr_reader :tournament
 

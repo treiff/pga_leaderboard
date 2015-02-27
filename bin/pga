@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 require 'pga_leaderboard'
 
 PgaLeaderboard::CLI.start(ARGV)
