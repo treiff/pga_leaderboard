@@ -7,10 +7,6 @@ module PgaLeaderboard
       @response = HTTParty.get(ENDPOINT).parsed_response
     end
 
-    def string_response
-      @response
-    end
-
     def parsed_array
       @response.split("&")
     end
@@ -24,6 +20,5 @@ module PgaLeaderboard
       time = parsed_array[2]
       time.gsub(/golf_s_stamp=/, "")
     end
-
   end
 end
