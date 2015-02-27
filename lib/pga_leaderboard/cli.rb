@@ -15,6 +15,7 @@ module PgaLeaderboar
       output(tournament)
     end
 
+    desc 'output', 'output current tournament leaderboard'
     def output(tournament)
       puts
       puts tournament
