@@ -28,4 +28,10 @@ module PgaLeaderboard
   describe CLI do
     it 'is initialized with a tournament'
   end
+
+  describe Scheduler do
+    it 'takes time in seconds argument'
+    it 'runs a task after x amount of seconds'
+    it 'reruns the task until exited'
+  end
 end

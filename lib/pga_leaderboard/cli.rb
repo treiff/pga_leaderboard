@@ -11,7 +11,7 @@ module PgaLeaderboard
 
     desc 'leaderboard', 'see current tournament leaderboard'
     def leaderboard
-      output(tournament)
+      run { output(tournament) }
     end
 
     private
