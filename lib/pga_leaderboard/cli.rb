@@ -2,6 +2,8 @@ require 'thor'
 
 module PgaLeaderboard
   class CLI < Thor
+
+    include PgaLeaderboard
     attr_reader :tournament
 
     def initialize(*args)
