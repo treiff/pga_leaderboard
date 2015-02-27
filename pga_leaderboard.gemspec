@@ -23,4 +23,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec", "~>3.2.0"
   spec.add_development_dependency "guard", "~>2.12.4"
   spec.add_development_dependency "guard-rspec", "~>4.5.0"
+
+  spec.add_dependency "httparty", "~>0.13.3"
+  spec.add_dependency "thor", "~>0.19.1"
 end
