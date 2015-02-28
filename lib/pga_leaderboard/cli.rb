@@ -8,12 +8,14 @@ module PgaLeaderboard
 
     def initialize(*args)
       super
-      @tournament = PgaLeaderboard::Tournament.new
     end
 
     desc 'leaderboard', 'see current tournament leaderboard'
     def leaderboard
-      run { output(tournament) }
+      run {
+        @tournament = PgaLeaderboard::Tournament.new
+        output(tournament)
+      }
     end
 
     private
