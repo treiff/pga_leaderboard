@@ -4,12 +4,13 @@ require_relative "pga_leaderboard/cli"
 
 module PgaLeaderboard
   ENDPOINT = "http://sports.espn.go.com/sports/golf/bottomLineGolfLeaderboard"
-  INTERVAL = 180
+  INTERVAL = 200
 
   def run
     while true
       yield
       sleep INTERVAL
+      PgaLeaderboard::CLI.new(leaderboard)
     end
   end
 end
