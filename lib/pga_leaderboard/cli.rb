@@ -2,8 +2,9 @@ require 'thor'
 
 module PgaLeaderboard
   class CLI < Thor
-
+    require 'colorize'
     include PgaLeaderboard
+
     attr_reader :tournament
 
     def initialize(*args)
@@ -22,7 +23,10 @@ module PgaLeaderboard
 
     def output(array)
       puts
-      p tournament.clean_response
+      tournament.heading
+      puts "--------------------------------------------".colorize(:red)
+      puts
+      tournament.body
       puts
     end
   end

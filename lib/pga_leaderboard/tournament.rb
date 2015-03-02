@@ -22,5 +22,17 @@ module PgaLeaderboard
       end
       clean_array
     end
+
+    def heading
+      clean_response[0..1].each do |item|
+        puts item.rjust(35)
+      end
+    end
+
+    def body
+      clean_response[2..clean_response.length].each do |item|
+        puts item.gsub(/-\d/) { |score| score.colorize(:red) }
+      end
+    end
   end
 end
