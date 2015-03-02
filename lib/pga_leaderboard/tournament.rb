@@ -8,17 +8,19 @@ module PgaLeaderboard
     end
 
     def parsed_array
-      @response.split("&")
+      resp = @response.split("&")
+      resp.shift(4)
+      resp.pop(3)
+      resp
     end
 
-    def tournament_name
-      full_name = URI.decode(parsed_array[4])
-      full_name.gsub(/golf_s_left1=/, "")
-    end
-
-    def last_update
-      time = parsed_array[2]
-      time.gsub(/golf_s_stamp=/, "")
+    def clean_response
+      clean_array = []
+      parsed_array.each do |item|
+        stripped_item = item.gsub(/^[^=]*=/, "")
+        clean_array << URI.decode(stripped_item)
+      end
+      clean_array
     end
   end
 end

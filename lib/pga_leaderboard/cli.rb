@@ -22,9 +22,7 @@ module PgaLeaderboard
 
     def output(array)
       puts
-      puts "Last updated: #{tournament.last_update}"
-      puts
-      puts tournament.tournament_name
+      p tournament.clean_response
       puts
     end
   end
