@@ -1,30 +1,29 @@
-# PgaLeaderboard
+# PGA Leaderboard
+![Example](https://raw.githubusercontent.com/treiff/pga_leaderboard/master/example.png)
 
-TODO: Write a gem description
+Ever wonder how the leaderboard is looking at the current PGA tour event?  Here's your answer.  A simple executable providing a brief overview of the current tournament, leaderboard automatically updates every 3-minutes.
+
+Data is exracted from ESPN&reg; Bottomline as a URI encoded string. Default update from ESPN&reg; is every three minutes.
+
+This was the best data feed I could find (for free) for PGA leaderboard data.  Feel free to mess around with it and make it better,  It does its job for now as long as ESPN&reg; doesn't change their data format. 
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'pga_leaderboard'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install pga_leaderboard
 
 ## Usage
 
-TODO: Write usage instructions here
+Simple, once installed run:
+
+	$ pga leaderboard
+
+To exit ```ctrl^c```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/pga_leaderboard/fork )
+1. Fork it ( https://github.com/treiff/pga_leaderboard/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
