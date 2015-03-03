@@ -1,5 +1,5 @@
 # PGA Leaderboard
-![Example](https://raw.githubusercontent.com/treiff/pga_leaderboard/master/example.png)
+![Example](https://raw.githubusercontent.com/treiff/pga_leaderboard/master/img.png)
 
 Ever wonder how the leaderboard is looking at the current PGA tour event?  Here's your answer.  A simple executable providing a brief overview of the current tournament, leaderboard automatically updates every 3-minutes.
 
