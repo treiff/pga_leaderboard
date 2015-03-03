@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/treiff/pga_leaderboard.svg?branch=master)](https://travis-ci.org/treiff/pga_leaderboard)
 # PGA Leaderboard
 ![Example](https://raw.githubusercontent.com/treiff/pga_leaderboard/master/img.png)
 
