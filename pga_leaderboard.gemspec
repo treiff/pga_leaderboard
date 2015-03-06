@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Trevor Reiff"]
   spec.email         = ["trevorreiff@gmail.com"]
   spec.summary       = %q{Command line PGA leaderboard tool}
-  spec.description   = %q{View PGA leaderboard in your console, updated every 3-min}
+  spec.description   = %q{View PGA leaderboard in your console}
   spec.homepage      = ""
   spec.license       = "MIT"
 

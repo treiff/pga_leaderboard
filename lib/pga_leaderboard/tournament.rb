@@ -30,8 +30,12 @@ module PgaLeaderboard
     end
 
     def body
-      clean_response[2..clean_response.length].each do |item|
-        puts item.gsub(/-\d/) { |score| score.colorize(:red) }
+      if clean_response.length > 5
+        clean_response[2..clean_response.length].each do |item|
+          puts item.gsub(/-\d/) { |score| score.colorize(:red) }
+        end
+      else
+        puts "Sorry, not tournament data at this time."
       end
     end
   end
