@@ -1,12 +1,14 @@
 require 'spec_helper'
 
-module PgaLeaderboard
-  describe Tournament do
-    subject(:tournament) { PgaLeaderboard::Tournament.new }
+describe PgaLeaderboard::Tournament do
+  let(:response) { File.read(File.expand_path('../spec/fixtures/response.txt', File.dirname(__FILE__))) }
 
-    it 'exists as a object' do
-      expect(tournament).to be_a(Tournament)
+  describe 'methods' do
+    before do
+      allow(HTTParty).to receive(:get) { double(parsed_response: response) }
     end
+
+    let(:tournament) { PgaLeaderboard::Tournament.new }
 
     describe '#parsed_array' do
       it 'should return an array when parsed' do
